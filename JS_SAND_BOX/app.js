@@ -100,32 +100,32 @@
 
 //----------------------
 // Type Conversion
-let val;
+//let val;
 
 // Number to string
-val = String(555);
-val = String(4+4);
+// val = String(555);
+// val = String(4+4);
 // Bool to string
-val = String(true);
+//val = String(true);
 // Date to string
-val = String(new Date());
+//val = String(new Date());
 // Array to string
-val = String([1,2,3,4]);
+//val = String([1,2,3,4]);
 
 // toString()
-val = (5).toString();
-val = (true).toString();
+//val = (5).toString();
+//val = (true).toString();
 
 // String to number
-val = Number('5');
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number('hello');
-val = Number([1,2,3]);
+// val = Number('5');
+// val = Number(true);
+// val = Number(false);
+// val = Number(null);
+// val = Number('hello');
+// val = Number([1,2,3]);
 
-val = parseInt('100.30');
-val = parseFloat('100.30');
+// val = parseInt('100.30');
+// val = parseFloat('100.30');
 
 // Output
 // console.log(val);
@@ -133,9 +133,70 @@ val = parseFloat('100.30');
 // //console.log(val.length);
 // console.log(val.toFixed(2));
 
-const val1 = String(5);
-const val2 = 6;
-const sum = Number(val1 + val2);
+// const val1 = String(5);
+// const val2 = 6;
+// const sum = Number(val1 + val2);
 
-console.log(sum);
-console.log(typeof sum);
+// console.log(sum);
+// console.log(typeof sum);
+
+//----------------------------------------------------------
+// String Methods and Concatenation
+
+const  firstName = 'monir';
+const lastName = 'Alam'
+const str = 'Hello there my name is Brad';
+const tags = 'web design,web development,programming';
+let val;
+
+// concatenation
+val = firstName + ' ' + lastName;
+console.log(val);
+
+// Append
+ 
+val = 'tanvir ';
+val += 'khan';
+val  =firstName.indexOf('n'); //2
+// Escaping
+val =  'That\'s awesome, I can\'t wait';
+
+// Length
+val = firstName.length;
+
+// concat()
+val = firstName.concat(' ', lastName);
+
+// Change case
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+val = firstName[2];
+
+// indexOf()
+val = firstName.indexOf('l');
+val = firstName.lastIndexOf('l');
+
+// charAt()
+val = firstName.charAt('2');
+// Get last char
+val = firstName.charAt(firstName.length - 1);
+
+// substring()
+val = firstName.substring(0, 4);
+
+// slice()
+val = firstName.slice(0,4);
+val = firstName.slice(-3);
+
+// split()
+val = str.split(' ');
+val = tags.split(',');
+
+// replace()
+val = str.replace('Brad', 'Jack');
+
+// includes()
+val = str.includes('foo');
+
+console.log(val);
