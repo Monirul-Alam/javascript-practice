@@ -51,17 +51,49 @@
 // Have to assign a value
 // const greeting;
 
-const person = {
-  name: 'John',
-  age: 30
-}
+// const person = {
+//   name: 'John',
+//   age: 30
+// }
 
 // person.name = 'Sara';
 // person.age = 32;
 
-console.log(person);
+// console.log(person);
 
-const numbers = [1,2,3,4,5];
-numbers.push(6);
+// const numbers = [1,2,3,4,5];
+// numbers.push(6);
 
-console.log(numbers);
+// console.log(numbers);
+
+
+
+// Data types
+
+
+// PRIMITIVE
+
+// String
+//const name = 'John Doe';
+// Number
+//const age = 45;
+// Boolean
+//const hasKids = true;
+// Null
+//const car = null;
+// Undefined
+//let test;
+// Symbol
+//const sym = Symbol();
+
+// REFERENCE TYPES - Objects
+// Array
+//const hobbies = ['movies', 'music'];
+// Object literal
+// const address = {
+//   city: 'Boston',
+//   state: 'MA'
+// }
+// const today = new Date();
+// console.log(today);
+// console.log(typeof today);
