@@ -200,3 +200,26 @@ val = str.replace('Brad', 'Jack');
 val = str.includes('foo');
 
 console.log(val);
+
+
+//Template Literal
+ const name1 = 'john';
+ const age = 30;
+ const job = 'Web Developer';
+ const city = 'Miami';
+
+ // Without template strings(es5)
+ html = '<ul><li>Name: '+name +' </li> <li>Age: '+age+'</li> </ul>'; 
+
+ // with template literals(Strings from es6)
+ html =     `
+                <ul>
+                 <li>Name: ${name1} </li>
+                 <li>Job: ${job} </li>
+                 <li>${2+2} </li>
+                 <li>${age> 30 ? 'Over 30' : 'Under 30'} </li>
+                 
+            
+                </ul>
+            `
+ document.body.innerHTML = html;
