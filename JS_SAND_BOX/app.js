@@ -203,23 +203,90 @@ console.log(val);
 
 
 //Template Literal
- const name1 = 'john';
- const age = 30;
- const job = 'Web Developer';
- const city = 'Miami';
+//  const name1 = 'john';
+//  const age = 30;
+//  const job = 'Web Developer';
+//  const city = 'Miami';
 
- // Without template strings(es5)
- html = '<ul><li>Name: '+name +' </li> <li>Age: '+age+'</li> </ul>'; 
+//  // Without template strings(es5)
+//  html = '<ul><li>Name: '+name +' </li> <li>Age: '+age+'</li> </ul>'; 
 
- // with template literals(Strings from es6)
- html =     `
-                <ul>
-                 <li>Name: ${name1} </li>
-                 <li>Job: ${job} </li>
-                 <li>${2+2} </li>
-                 <li>${age> 30 ? 'Over 30' : 'Under 30'} </li>
+//  // with template literals(Strings from es6)
+//  html =     `
+//                 <ul>
+//                  <li>Name: ${name1} </li>
+//                  <li>Job: ${job} </li>
+//                  <li>${2+2} </li>
+//                  <li>${age> 30 ? 'Over 30' : 'Under 30'} </li>
                  
             
-                </ul>
-            `
- document.body.innerHTML = html;
+//                 </ul>
+//             `
+//  document.body.innerHTML = html;
+
+
+ ///////////////////////////////////////////////////////////////////////
+ ///
+ //
+ //
+ // Arrays and Array method
+
+  
+const numbers = [2,34,534,33,33];
+const numbers2 = new Array(22,44,21,45);
+const fruit = ['apple', 'banana', 'orange'];
+let val1;
+
+// Get array length
+val1 = numbers.length;
+
+//check if is array
+val1 = Array.isArray('numbers');  // this is false.
+
+
+//Get Single value
+val1 = numbers[3];        // 33
+// Insert into array
+numbers[2] = 100;
+// Find index of value
+val1 = numbers.indexOf(33)   /// 3 no index 
+// Mutating Arrays
+// Add on to end
+numbers.push(250);          // [2, 34, 100, 33, 33, 250]
+// Add on to front
+numbers.unshift(120);       // [120, 2, 34, 100, 33, 33, 250]
+// Take off from end
+numbers.pop(); 
+// Take off from front
+numbers.shift();            // [2, 34, 100, 33, 33]
+// Splice values
+ numbers.splice(1,3);      //[2, 33]
+ 
+ // Reverse
+ numbers.reverse();
+ // Concate
+ val1 = numbers.concat(numbers2)
+
+ // Sorting arrays
+ val2 = fruit.sort();
+
+ // user the compre function
+
+ val3 = numbers.sort(function(x,y){
+  return x-y;
+ })
+// reverse Sort
+val3 = numbers.sort(function(x,y){           // [33, 2]
+  return y-x;
+ })
+
+ // Find
+ function under50(num) {
+  return num ,50
+ }
+val4 = numbers.find(under50);
+console.log(numbers);
+console.log(val1);
+console.log(val2);
+console.log(val3); 
+ 
