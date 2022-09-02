@@ -143,63 +143,63 @@
 //----------------------------------------------------------
 // String Methods and Concatenation
 
-const  firstName = 'monir';
-const lastName = 'Alam'
-const str = 'Hello there my name is Brad';
-const tags = 'web design,web development,programming';
-let val;
+// const  firstName = 'monir';
+// const lastName = 'Alam'
+// const str = 'Hello there my name is Brad';
+// const tags = 'web design,web development,programming';
+// let val;
 
-// concatenation
-val = firstName + ' ' + lastName;
-console.log(val);
+// // concatenation
+// val = firstName + ' ' + lastName;
+// console.log(val);
 
-// Append
+// // Append
  
-val = 'tanvir ';
-val += 'khan';
-val  =firstName.indexOf('n'); //2
-// Escaping
-val =  'That\'s awesome, I can\'t wait';
+// val = 'tanvir ';
+// val += 'khan';
+// val  =firstName.indexOf('n'); //2
+// // Escaping
+// val =  'That\'s awesome, I can\'t wait';
 
-// Length
-val = firstName.length;
+// // Length
+// val = firstName.length;
 
-// concat()
-val = firstName.concat(' ', lastName);
+// // concat()
+// val = firstName.concat(' ', lastName);
 
-// Change case
-val = firstName.toUpperCase();
-val = firstName.toLowerCase();
+// // Change case
+// val = firstName.toUpperCase();
+// val = firstName.toLowerCase();
 
-val = firstName[2];
+// val = firstName[2];
 
-// indexOf()
-val = firstName.indexOf('l');
-val = firstName.lastIndexOf('l');
+// // indexOf()
+// val = firstName.indexOf('l');
+// val = firstName.lastIndexOf('l');
 
-// charAt()
-val = firstName.charAt('2');
-// Get last char
-val = firstName.charAt(firstName.length - 1);
+// // charAt()
+// val = firstName.charAt('2');
+// // Get last char
+// val = firstName.charAt(firstName.length - 1);
 
-// substring()
-val = firstName.substring(0, 4);
+// // substring()
+// val = firstName.substring(0, 4);
 
-// slice()
-val = firstName.slice(0,4);
-val = firstName.slice(-3);
+// // slice()
+// val = firstName.slice(0,4);
+// val = firstName.slice(-3);
 
-// split()
-val = str.split(' ');
-val = tags.split(',');
+// // split()
+// val = str.split(' ');
+// val = tags.split(',');
 
-// replace()
-val = str.replace('Brad', 'Jack');
+// // replace()
+// val = str.replace('Brad', 'Jack');
 
-// includes()
-val = str.includes('foo');
+// // includes()
+// val = str.includes('foo');
 
-console.log(val);
+// console.log(val);
 
 
 //Template Literal
@@ -232,61 +232,104 @@ console.log(val);
  // Arrays and Array method
 
   
-const numbers = [2,34,534,33,33];
-const numbers2 = new Array(22,44,21,45);
-const fruit = ['apple', 'banana', 'orange'];
-let val1;
+// const numbers = [2,34,534,33,33];
+// const numbers2 = new Array(22,44,21,45);
+// const fruit = ['apple', 'banana', 'orange'];
+// let val1;
 
-// Get array length
-val1 = numbers.length;
+// // Get array length
+// val1 = numbers.length;
 
-//check if is array
-val1 = Array.isArray('numbers');  // this is false.
+// //check if is array
+// val1 = Array.isArray('numbers');  // this is false.
 
 
-//Get Single value
-val1 = numbers[3];        // 33
-// Insert into array
-numbers[2] = 100;
-// Find index of value
-val1 = numbers.indexOf(33)   /// 3 no index 
-// Mutating Arrays
-// Add on to end
-numbers.push(250);          // [2, 34, 100, 33, 33, 250]
-// Add on to front
-numbers.unshift(120);       // [120, 2, 34, 100, 33, 33, 250]
-// Take off from end
-numbers.pop(); 
-// Take off from front
-numbers.shift();            // [2, 34, 100, 33, 33]
-// Splice values
- numbers.splice(1,3);      //[2, 33]
+// //Get Single value
+// val1 = numbers[3];        // 33
+// // Insert into array
+// numbers[2] = 100;
+// // Find index of value
+// val1 = numbers.indexOf(33)   /// 3 no index 
+// // Mutating Arrays
+// // Add on to end
+// numbers.push(250);          // [2, 34, 100, 33, 33, 250]
+// // Add on to front
+// numbers.unshift(120);       // [120, 2, 34, 100, 33, 33, 250]
+// // Take off from end
+// numbers.pop(); 
+// // Take off from front
+// numbers.shift();            // [2, 34, 100, 33, 33]
+// // Splice values
+//  numbers.splice(1,3);      //[2, 33]
  
- // Reverse
- numbers.reverse();
- // Concate
- val1 = numbers.concat(numbers2)
+//  // Reverse
+//  numbers.reverse();
+//  // Concate
+//  val1 = numbers.concat(numbers2)
 
- // Sorting arrays
- val2 = fruit.sort();
+//  // Sorting arrays
+//  val2 = fruit.sort();
 
- // user the compre function
+//  // user the compre function
 
- val3 = numbers.sort(function(x,y){
-  return x-y;
- })
-// reverse Sort
-val3 = numbers.sort(function(x,y){           // [33, 2]
-  return y-x;
- })
+//  val3 = numbers.sort(function(x,y){
+//   return x-y;
+//  })
+// // reverse Sort
+// val3 = numbers.sort(function(x,y){           // [33, 2]
+//   return y-x;
+//  })
 
- // Find
- function under50(num) {
-  return num ,50
- }
-val4 = numbers.find(under50);
-console.log(numbers);
-console.log(val1);
-console.log(val2);
-console.log(val3); 
- 
+//  // Find
+//  function under50(num) {
+//   return num ,50
+//  }
+// val4 = numbers.find(under50);
+// console.log(numbers);
+// console.log(val1);
+// console.log(val2);
+// console.log(val3); 
+
+
+
+////////////////////////////////////////////////////////////
+
+// object literal
+const person = {
+  firstName: 'Steve',
+  lastName: 'Smith',
+  age: 36,
+  email: 'steve@aol.com',
+  hobbies: ['music', 'sports'],
+  address: {
+    city: 'Miami',
+    state: 'FL'
+  },
+  getBirthYear: function(){
+    return 2017 - this.age;
+  }
+}
+
+let val;
+
+val = person;
+// Get specific value
+val = person.firstName;
+val = person['lastName'];
+val = person.age;
+val = person.hobbies[1];
+val = person.address.state;
+val = person.address['city'];
+val = person.getBirthYear();
+
+console.log(val);
+
+const people = [
+  {name: 'John', age: 30},
+  {name: 'Mike', age: 23},
+  {name: 'Nancy', age: 40}
+];
+
+for(let i = 0; i < people.length; i++){
+  console.log(people[i].name);
+}
