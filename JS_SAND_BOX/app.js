@@ -452,69 +452,69 @@
 //////////////////////////////////////
 ////////////
 /// Switches
-const color = 'blue';
+// const color = 'blue';
 
-switch(color){
-  case 'red':
-    console.log('Color is red');
-     break;
+// switch(color){
+//   case 'red':
+//     console.log('Color is red');
+//      break;
 
-  case 'blue':
-    console.log('Color is blue');
-     break; 
+//   case 'blue':
+//     console.log('Color is blue');
+//      break; 
 
-  default:
-    console.log('Color is not red or blue')   
+//   default:
+//     console.log('Color is not red or blue')   
 
-}
+// }
 
 
-switch(new Date().getDay()){
-  case 0:
-    day = 'Sunday';
-  case 1:
-    day = 'Monday';  
-    break;
-  case 2:
-    day = 'Tuesday';
-  case 3:    
-    break;
-    day = 'Wednessday';
-  case 4:
-    day = 'Thursday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
+// switch(new Date().getDay()){
+//   case 0:
+//     day = 'Sunday';
+//   case 1:
+//     day = 'Monday';  
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//   case 3:    
+//     break;
+//     day = 'Wednessday';
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
     
-    day = 'Saturday';
-    break;
+//     day = 'Saturday';
+//     break;
   
-}
-a = new Date().getDay();
-console.log(a);
-console.log(`today is ${day}`)
+// }
+// a = new Date().getDay();
+// console.log(a);
+// console.log(`today is ${day}`)
 
 /////////////////////////////////////////////////////////////////////////////////////
 
 //////// Function Declaration
 
 
-function greet(firstName = 'John', lastName = 'Doe'){
-  // if(typeof firstName === 'undefined'){firstName = 'John'}
-  // if(typeof lastName === 'undefined'){lastName = 'Doe'}
-  //console.log('Hello');
-  return 'Hello ' + firstName + ' ' + lastName;
-}
+// function greet(firstName = 'John', lastName = 'Doe'){
+//   // if(typeof firstName === 'undefined'){firstName = 'John'}
+//   // if(typeof lastName === 'undefined'){lastName = 'Doe'}
+//   //console.log('Hello');
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
 
 // console.log(greet());
 
 // FUNCTION EXPRESIONS
 
-const square = function(x = 3){
-  return x*x;
-};
+// const square = function(x = 3){
+//   return x*x;
+// };
 
 // console.log(square());
 
@@ -530,19 +530,40 @@ const square = function(x = 3){
 
 // PROPERTY METHODS
 
-const todo = {
-  add: function(){
-    console.log('Add todo..');
-  },
-  edit: function(id){
-    console.log(`Edit todo ${id}`);
-  }
+// const todo = {
+//   add: function(){
+//     console.log('Add todo..');
+//   },
+//   edit: function(id){
+//     console.log(`Edit todo ${id}`);
+//   }
+// }
+
+// todo.delete = function(){
+//   console.log('Delete todo...');
+// }
+
+// todo.add();
+// todo.edit(22);
+// todo.delete();
+
+
+const a ='ad';
+
+const b = function() {
+  console.log("fdgfgff:"+a);
+
+  const b=6;
+  console.log(b);
+}
+b();
+
+
+// Function Expression
+var canada = () => console.log('cold')
+// Function Declaration
+function india() {
+  console.log('warm')
 }
 
-todo.delete = function(){
-  console.log('Delete todo...');
-}
-
-todo.add();
-todo.edit(22);
-todo.delete();
+// Function Invocation, Calling, Execution
