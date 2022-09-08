@@ -38,4 +38,6 @@ function runEvent(e) {
   heading.innerHTML =`MouseX:${e.offsetX} MoueY: ${e.offsetY}`;
    document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`;
 
+   
+
 }
