@@ -30,4 +30,4 @@ class Customer extends Person {
 const hasan = new Customer('Hasan' , 'Jr', '3233-333333','Standard');
 
 console.log(hasan.greeting());
-console.log(Customer.getMembershipCost()); // Because it is static wew should use actual class name-> Customer
+console.log(Customer.getMembershipCost()); // Because it is static we should use actual class name-> Customer 
