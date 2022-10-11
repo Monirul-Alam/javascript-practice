@@ -7,4 +7,4 @@ const myObj = {
 var keys = Object.keys(myObj);
 var keys = Object.values(myObj);
 var keys = Object.entries(myObj);
-console.log(keys);
+ console.log(keys);
