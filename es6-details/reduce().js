@@ -5,3 +5,5 @@ var sum = numbers.reduce((preValue, currentValue, currentIndex, arr) => {
 }, 0);
 
 console.log(sum);
+
+
